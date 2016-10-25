@@ -193,7 +193,7 @@ module BootstrapForm
       options = args.extract_options!
       name = args.first
 
-      options[:class] = ["form-control", options[:class]].compact.join(' ')
+      options[:class] = ["form-group", options[:class]].compact.join(' ')
       options[:class] << " #{error_class}" if has_error?(name)
       options[:class] << " #{feedback_class}" if options[:icon]
 
